@@ -1,0 +1,136 @@
+.font-instrument {
+    font-family: "Instrument Serif", serif;
+}
+
+.text-opacity-70 {
+    --bs-text-opacity: 0.70;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.card{
+    margin-bottom: 24px;
+}
+
+.btn-outline-dark {
+    background-color: transparent !important;
+    color: var(--bs-dark);
+
+    &:hover {
+        color: var(--bs-white);
+        background-color: var(--bs-dark) !important;
+    }
+}
+
+.btn-check:checked+.btn,
+:not(.btn-check)+.btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    box-shadow: unset !important;
+
+    .btn-text {
+        color: var(--bs-white);
+    }
+}
+
+.btn {
+    position: relative; // Needed for absolute children
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bs-dark);
+    border-radius: 9999px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    width: fit-content;
+    padding: 12px 42px 12px 20px;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    .btn-text {
+        position: relative;
+        z-index: 1;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--bs-white);
+        transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        padding-inline-end: 10px;
+    }
+
+    &:hover .btn-text {
+        color: var(--bs-dark);
+        transform: translateX(2.5rem); // 10 x 0.25rem
+    }
+
+    .btn-icon {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translate(-120%, -50%);
+        z-index: 0;
+        transition: transform 0.4s ease, left 0.4s ease;
+    }
+
+    &:hover .btn-icon {
+        left: 0;
+        color: var(--bs-white) !important;
+        background-color: var(--bs-dark) !important;
+        transform: translate(20%, -50%) rotate(45deg);
+    }
+}
+
+.btn-primary {
+    border-color: var(--bs-primary);
+    background-color: var(--bs-primary);
+
+    &:hover {
+        .btn-text {
+            color: var(--bs-primary);
+        }
+
+        .btn-icon {
+            background-color: var(--bs-primary) !important;
+        }
+    }
+}
+
+.btn-white {
+    border-color: var(--bs-white) !important;
+    background-color: var(--bs-white);
+
+    .btn-text {
+        color: var(--bs-dark);
+    }
+
+    &:hover {
+        .btn-text {
+            color: var(--bs-white);
+        }
+
+        .btn-icon {
+            color: var(--bs-dark) !important;
+            background-color: var(--bs-white) !important;
+        }
+    }
+}
+
+.btn-outline-light{
+    &:hover {
+        .btn-text {
+            color: var(--bs-white) !important;
+        }
+
+        .btn-icon {
+            color: var(--bs-dark) !important;
+            background-color: var(--bs-white) !important;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.header {
+    padding: 12px 0;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+    animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
+
+    &.fixed-header {
+        .navbar {
+            background-color: var(--bs-white);
+            box-shadow: var(--bs-box-shadow-sm);
+        }
+    }
+
+    .navbar {
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        &.active, &:hover {
+                            color: var(--bs-dark);
+                            background-color: var(--bs-white);
+                            box-shadow: var(--bs-box-shadow-sm);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

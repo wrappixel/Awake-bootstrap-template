@@ -1,0 +1,288 @@
+// ----------------------------------------------
+// Variables Style
+// ----------------------------------------------
+
+// colors
+$white: #fff !default;
+$gray-100: #F4F4F4 !default;
+$gray-200: #e8e8e8 !default;
+$gray-300: #a4a5a5 !default;
+$gray-400: #767778 !default;
+$gray-500: #1B1D1E !default;
+$black: #000 !default;
+
+// Color
+$blue: #4928FD !default;
+$indigo: #BA81EE !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #F4889A !default;
+$orange: #FFAF68 !default;
+$yellow: #F6E683 !default;
+$green: #79D45E !default;
+$teal: #20c997 !default;
+$cyan: #70B5FF !default;
+
+// Main Colors 
+$primary: $blue !default;
+$secondary: #BA81EE !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$orange: $orange !default;
+$light: $gray-100 !default;
+$muted: $gray-300 !default;
+$dark: $gray-500 !default;
+$light-orange: #ffefe1;
+
+// Theme Colorss
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "indigo": $indigo,
+  "orange": $orange,
+  "light": $light,
+  "dark": $dark,
+  "muted": $muted,
+  "light-orange": $light-orange,
+  ) !default;
+
+// light colors
+$primary-bg-subtle: #dbd4ff !default;
+$secondary-bg-subtle: #f1e6fc !default;
+$success-bg-subtle: #e4f6df !default;
+$info-bg-subtle: #e2f0ff !default;
+$warning-bg-subtle: #fdfae6 !default;
+$danger-bg-subtle: #fde7eb !default;
+// $orange-bg-subtle: #ffefe1 !default;
+$indigo-bg-subtle: #f1e6fc !default;
+$light-bg-subtle: $gray-100 !default;
+
+$primary-text-emphasis: shade-color($primary, 60%) !default;
+$secondary-text-emphasis: shade-color($secondary, 60%) !default;
+$success-text-emphasis: shade-color($success, 60%) !default;
+$info-text-emphasis: shade-color($info, 60%) !default;
+$warning-text-emphasis: shade-color($warning, 60%) !default;
+$danger-text-emphasis: shade-color($danger, 60%) !default;
+$orange-text-emphasis: shade-color($orange, 60%) !default;
+$light-text-emphasis: $gray-100 !default;
+$dark-text-emphasis: $gray-500 !default;
+
+
+// Spacer
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: 10px,
+  7: 12px,
+  8: 20px,
+  9: 28px,
+  10: 30px,
+  11: 40px,
+  12: 64px,
+  13: 80px,
+  14: 120px,
+  15: 150px,
+  16: 180px,
+  17: 200px,
+  18: 210px,
+  19: 250px,
+  ) !default;
+
+$utilities: (
+  ) !default;
+$utilities: (
+  "width": (property: width,
+    class: w,
+    values: (20: 20%,
+      25: 25%,
+      30: 30%,
+      40: 40%,
+      50: 50%,
+      60: 60%,
+      70: 70%,
+      75: 75%,
+      85: 85%,
+      100: 100%,
+      auto: auto,
+    ),
+  ),
+);
+
+// Common
+$min-contrast-ratio: 1.7 !default;
+
+// Margins
+$enable-negative-margins: true !default;
+$enable-shadows: true !default;
+
+// Global
+$text-muted: $muted !default;
+$grid-gutter-width: 24px !default;
+
+// Font Weight
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-weight-base: $font-weight-normal;
+
+// Buttons
+$btn-padding-y: 4px !default;
+$btn-padding-x: 4px !default;
+$btn-color: $dark !default;
+$btn-link-color: $dark !default;
+$btn-font-weight: 500 !default;
+$btn-border-radius: 56px !default;
+$btn-box-shadow: unset !default;
+$btn-font-size: 16px !default;
+$btn-border-radius-lg: 9px !default;
+
+// Font Family
+$font-family-sans-serif: "Inter Tight", sans-serif !default;
+
+// Font Sizes
+$font-sizes: (
+  1: 10px,
+  2: 12px,
+  3: 14px,
+  4: 16px,
+  5: 18px,
+  6: 20px,
+  7: 24px,
+  8: 28px,
+  9: 40px,
+  10: 48px,
+  11: 72px,
+  12: 96px,
+  13: 128px,
+  ) !default;
+$font-size-base: 1rem !default;
+
+$h1-font-size: 128px !default;
+$h2-font-size: 48px !default;
+$h3-font-size: 24px !default;
+$h4-font-size: 20px !default;
+$h5-font-size: 18px !default;
+$h6-font-size: 16px !default;
+
+// Line Heght
+$line-height-base: 1.5 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 2 !default;
+
+// Body
+$body-bg: $white !default;
+$body-color: $gray-400 !default;
+
+// Heading
+$headings-color: $dark !default;
+$headings-font-weight: 500 !default;
+
+// Border Color
+$border-color: $gray-200 !default;
+
+
+// Box Shadow
+$box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 4px 6px -4px rgba(0, 0, 0, 0.1) !default;
+$box-shadow-inset: unset !default;
+
+// Card
+$card-title-color: $dark !default;
+$card-subtitle-color: var(--bs-body-color) !default;
+$card-spacer-y: 32px !default;
+$card-spacer-x: 32px !default;
+$card-border-radius: 16px !default;
+$card-border-width: 0px !default;
+
+// Border Radius
+$border-radius: 8px !default;
+$border-radius-sm: 16px !default;
+$border-radius-lg: 24px !default;
+
+// Badges
+$badge-font-size: 14px !default;
+$badge-font-weight: 400 !default;
+$badge-padding-y: 9px !default;
+$badge-padding-x: 16px !default;
+$badge-border-radius: $btn-border-radius;
+
+// Tooltips
+$tooltip-font-size: 12px !default;
+$tooltip-bg: $dark;
+
+// Input
+$form-label-color: $dark;
+$form-label-font-weight: 400;
+$form-select-indicator-padding: 38px;
+$form-select-border-radius: 16px !default;
+$form-select-box-shadow: unset !default;
+$input-border-radius: 16px !default;
+$input-group-addon-bg: $dark !default;
+$input-group-addon-border-color: $border-color !default;
+$input-border-color: $border-color !default;
+$input-bg: $body-bg !default;
+$input-color: $dark !default;
+$input-padding-y: 12px;
+$input-padding-x: 20px;
+$form-check-input-width: 1.313em;
+$form-check-min-height: 1.313em;
+$form-check-input-border: 1.25px solid $dark;
+$form-check-input-checked-bg-color: var(--bs-primary
+);
+
+
+// Dropdown
+$dropdown-border-radius: $border-radius-lg !default;
+$dropdown-min-width: 380px !default;
+$dropdown-border-width: 0 !default;
+$dropdown-item-padding-y: 10px !default;
+$dropdown-link-hover-bg: $gray-100 !default;
+$dropdown-link-active-bg: $gray-100;
+$dropdown-link-active-color: $dark;
+$link-color: $dark !default;
+
+$link-hover-color: $primary !default;
+
+// Offcanvas
+$offcanvas-border-width: 0 !default;
+$offcanvas-horizontal-width: 330px !default;
+
+// Accordion
+$accordion-padding-y: 24px;
+$accordion-padding-x: 24px;
+$accordion-button-color: $dark;
+$accordion-body-padding-y: 1rem;
+$accordion-border-color: $border-color;
+$accordion-button-active-bg: transparent !default;
+$accordion-button-active-color: $dark;
+$accordion-icon-color: $dark;
+$accordion-icon-active-color: $dark;
+$accordion-button-icon: url("data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9ImN1cnJlbnRDb2xvciIgIHN0cm9rZS13aWR0aD0iMiIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgIHN0cm9rZS1saW5lam9pbj0icm91bmQiICBjbGFzcz0iaWNvbiBpY29uLXRhYmxlciBpY29ucy10YWJsZXItb3V0bGluZSBpY29uLXRhYmxlci1wbHVzIj48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTIgNWwwIDE0IiAvPjxwYXRoIGQ9Ik01IDEybDE0IDAiIC8+PC9zdmc+");
+$accordion-button-active-icon: url("data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9ImN1cnJlbnRDb2xvciIgIHN0cm9rZS13aWR0aD0iMiIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgIHN0cm9rZS1saW5lam9pbj0icm91bmQiICBjbGFzcz0iaWNvbiBpY29uLXRhYmxlciBpY29ucy10YWJsZXItb3V0bGluZSBpY29uLXRhYmxlci14Ij48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTggNmwtMTIgMTIiIC8+PHBhdGggZD0iTTYgNmwxMiAxMiIgLz48L3N2Zz4=");
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1296px,
+  ) !default;
+
+
+$hr-border-color: $border-color !default;
+$hr-opacity: 1 !default;

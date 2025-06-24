@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "./variables/variables";
+
+// Import Bootstrap source files (Required file)
+@import "../libs/bootstrap/scss/bootstrap.scss";
+
+// Theme Layouts style (Required file)
+@import "./layouts/header";
+
+// Pages style (Required file)
+@import "./pages/index";
+
+// Component style (Required file)
+@import "./component/reboot";
+
+// Utilities style (Required file)
+@import "./utilities/icon-size";
+@import "./utilities/override";
