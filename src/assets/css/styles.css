@@ -20921,6 +20921,10 @@ ul {
   background-color: var(--bs-white) !important;
 }
 
+.btn-dark:hover {
+  color: var(--bs-dark);
+}
+
 .btn-outline-light:hover .btn-text {
   color: var(--bs-white) !important;
 }

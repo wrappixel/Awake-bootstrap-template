@@ -122,6 +122,12 @@
     }
 }
 
+.btn-dark{
+    &:hover {
+        color: var(--bs-dark);
+    }
+}
+
 .btn-outline-light{
     &:hover {
         .btn-text {
